@@ -10,7 +10,6 @@ import org.bukkit.event.Listener
 import org.bukkit.event.player.PlayerMoveEvent
 
 var dount = false
-
 class madeyoulook : Listener{
 
     @EventHandler
