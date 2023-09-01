@@ -13,6 +13,7 @@ class Ultimate_dirt : JavaPlugin() {
 
 
     private fun registerListeners() {
+        server.pluginManager.registerEvents(MadeYouLookDirt(), this)
         logger.info("Registered Listeners")
     }
 
