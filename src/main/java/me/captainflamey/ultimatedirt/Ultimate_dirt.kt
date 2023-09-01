@@ -1,5 +1,6 @@
 package me.captainflamey.ultimatedirt
 
+import me.captainflamey.ultimatedirt.listeners.madeyoulook
 import org.bukkit.plugin.java.JavaPlugin
 
 class Ultimate_dirt : JavaPlugin() {
@@ -13,7 +14,7 @@ class Ultimate_dirt : JavaPlugin() {
 
 
     private fun registerListeners() {
-        server.pluginManager.registerEvents(MadeYouLookDirt(), this)
+        server.pluginManager.registerEvents(madeyoulook(), this)
         logger.info("Registered Listeners")
     }
 
