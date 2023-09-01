@@ -18,8 +18,6 @@ class madeyoulook : Listener{
 
         val b = player.location.block.getRelative(BlockFace.DOWN)
 
-
-
         if (b.type == Material.DIRT) {
             if (!dount) {
                 player.sendMessage(
