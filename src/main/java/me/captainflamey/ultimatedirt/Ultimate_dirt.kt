@@ -7,8 +7,14 @@ class Ultimate_dirt : JavaPlugin() {
         // Plugin startup logic
         logger.info("The plugin has loaded")
 
+
+        registerListeners()
     }
 
+
+    private fun registerListeners() {
+        logger.info("Registered Listeners")
+    }
 
 
     override fun onDisable() {
