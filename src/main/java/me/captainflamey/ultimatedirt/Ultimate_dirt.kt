@@ -1,9 +1,9 @@
 package me.captainflamey.ultimatedirt
 
-import me.captainflamey.ultimatedirt.listeners.madeyoulook
+import me.captainflamey.ultimatedirt.listeners.DirtDetection
 import org.bukkit.plugin.java.JavaPlugin
 
-class Ultimate_dirt : JavaPlugin() {
+class ultimateDirt : JavaPlugin() {
     override fun onEnable() {
         // Plugin startup logic
         logger.info("The plugin has loaded")
@@ -13,7 +13,7 @@ class Ultimate_dirt : JavaPlugin() {
     }
 
     private fun registerListeners() {
-        server.pluginManager.registerEvents(madeyoulook(), this)
+        server.pluginManager.registerEvents(DirtDetection(), this)
         logger.info("Registered Listeners")
 
     }

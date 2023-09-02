@@ -9,8 +9,8 @@ import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.player.PlayerMoveEvent
 
-var dount = false
-class madeyoulook : Listener{
+var dirtCount = false
+class DirtDetection : Listener{
 
     @EventHandler
     fun playerBlockEvent(event: PlayerMoveEvent) {
@@ -19,16 +19,16 @@ class madeyoulook : Listener{
         val b = player.location.block.getRelative(BlockFace.DOWN)
 
         if (b.type == Material.DIRT) {
-            if (!dount) {
+            if (!dirtCount) {
                 player.sendMessage(
                     Component.text("Made You Look").color(TextColor.color(0, 255, 255)).decorate(TextDecoration.BOLD)
                         .decorate(TextDecoration.ITALIC)
                 )
-                dount = true
+                dirtCount = true
             }
         }
         else {
-            dount = false
+            dirtCount = false
 
 
         }
