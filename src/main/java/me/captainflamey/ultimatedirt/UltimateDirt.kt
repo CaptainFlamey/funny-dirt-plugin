@@ -3,7 +3,7 @@ package me.captainflamey.ultimatedirt
 import me.captainflamey.ultimatedirt.listeners.DirtDetection
 import org.bukkit.plugin.java.JavaPlugin
 
-class ultimateDirt : JavaPlugin() {
+class UltimateDirt : JavaPlugin() {
     override fun onEnable() {
         // Plugin startup logic
         logger.info("The plugin has loaded")

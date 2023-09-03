@@ -10,6 +10,7 @@ import org.bukkit.event.Listener
 import org.bukkit.event.player.PlayerMoveEvent
 
 var dirtCount = false
+var counter = 0
 class DirtDetection : Listener{
 
     @EventHandler
@@ -31,6 +32,10 @@ class DirtDetection : Listener{
             dirtCount = false
 
 
+        }
+
+        while (dirtCount) {
+            counter += 1
         }
     }
 
