@@ -1,6 +1,7 @@
 package me.captainflamey.ultimatedirt
 
 import me.captainflamey.ultimatedirt.listeners.DirtDetection
+import me.captainflamey.ultimatedirt.listeners.ExplosiveDirt
 import org.bukkit.plugin.java.JavaPlugin
 
 class UltimateDirt : JavaPlugin() {
@@ -14,6 +15,7 @@ class UltimateDirt : JavaPlugin() {
 
     private fun registerListeners() {
         server.pluginManager.registerEvents(DirtDetection(), this)
+        server.pluginManager.registerEvents(ExplosiveDirt(), this)
         logger.info("Registered Listeners")
 
     }

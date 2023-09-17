@@ -2,3 +2,7 @@ name: ultimate-dirt
 version: '${project.version}'
 main: me.captainflamey.ultimatedirt.Ultimate_dirt
 api-version: '1.20'
+
+commands:
+  dirtCounter:
+    description: Displays the number of times a player has stepped on a block of dirt.
